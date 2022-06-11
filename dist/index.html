@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--===== SWIPER CSS ======-->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <!-- Bootstrap mimificado -->
+    <link rel="stylesheet" href="./css/main.css"/>
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="./css/estilos.css"/>
+    <!-- Tipografia -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- AOS Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Mii School</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-lg-top">
+        <div class="container">
+          <a class="logo_container" href="#"
+            ><svg
+              class="logo"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 417.2 175.4"
+            >
+              <g>
+                <path
+                  fill="white"
+                  d="M0,168.1V8.4A5.4,5.4,0,0,1,5.4,3H23.1a5.4,5.4,0,0,1,5.4,5.4v4.9a2,2,0,0,0,3,1.6C35,9.6,41.2,5.8,49.1,3c23.1-7.9,51.3,2.4,58.4,29.7a48.8,48.8,0,0,1,1.4,12.1v80.7a26.4,26.4,0,0,0,15.5,24.3c15.4,6.8,36.6,2.6,38.2-18.2V8.4A5.4,5.4,0,0,1,168,3h16.2a5.4,5.4,0,0,1,5.4,5.4V168.1a5.4,5.4,0,0,1-5.4,5.4H168.4a5.4,5.4,0,0,1-5.4-5.4h0a2.8,2.8,0,0,0-4.3-2.4l-8.8,5.3c-21.9,8.2-41.2,4.4-53.8-7.2a41.9,41.9,0,0,1-13-30.8V48.4c-.4-34.8-58.2-32-55,0V168a5.4,5.4,0,0,1-5.4,5.4H5.4A5.4,5.4,0,0,1,0,168.1Z"
+                />
+                <rect
+                  fill="white"
+                  x="241.6"
+                  y="1"
+                  width="24.6"
+                  height="172.43"
+                  rx="4.1"
+                />
+                <rect
+                  fill="white"
+                  x="319.6"
+                  y="1"
+                  width="24.6"
+                  height="172.43"
+                  rx="4.1"
+                />
+                <circle fill="white" cx="393" cy="24.3" r="24.3" />
+              </g>
+            </svg>
+          </a>
+          <button
+            class="navbar-toggler p-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav__menu collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center">
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link text-white active fs-6"  href="#hero">Inicio</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link text-white fs-6"  href="#cursos">Cursos</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link text-white fs-6"  href="#beneficios">Beneficios</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link text-white fs-6"  href="#instructor">Instructor</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link text-white fs-6"   href="#testimonios">Testimonios</a>
+              </li>
+
+              <li class="nav-item d-flex align-items-center mx-lg-3">
+                <div id="noche-luz" class="noche__luz me-3">
+                  <div id="bola" class="bola"></div>
+                </div>
+                <div class="dia-noche">
+                  <i class="fa-solid fa-cloud-moon fs-4"></i>
+                  <!-- <i class="fa-solid fa-cloud-sun fs-4"></i>  -->
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- ================= SECCION HERO ================= -->
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="row align-items-center">
+            <div
+              class="my-3 my-md-0 col-12 col-md-6 d-flex justify-content-center"
+              data-aos="fade-up"
+            >
+              <img src="./assets/img/hero-img.png" alt="..." class="hero-img" />
+            </div>
+            <div class="col-12 col-md-6 my-3 my-md-0" data-aos="fade-left">
+              <h1 class="display-5 px-xl-5">
+                Una revolucionaria manera de educar.
+              </h1>
+              <p class="my-3 px-xl-5 hero-text">
+                “La educación en línea es un aprendizaje con soporte electrónico
+                que depende de Internet para la interacción profesor/alumno y la
+                distribución de materiales de clase.”
+              </p>
+
+              <div class="d-flex align-items-center px-xl-5 my-5">
+                <div class="player me-3">
+                  <svg
+                    class="triangulo-hero"
+                    viewBox="0 0 103 151"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 11.2816V139.718C0 149.752 14.4043 154.771 22.8272 147.68L99.0841 83.4615C104.305 79.0634 104.305 71.9366 99.0841 67.5385L22.8272 3.32011C14.4043 -3.77121 0 1.24835 0 11.2816Z"
+                    />
+                  </svg>
+                </div>
+                <a href="#" class="hero-text fs-6"> ¿Qué es nulo?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          class="hero-decoracion"
+          src="./assets/img/hero-decoracion.png"
+          alt="..."
+        />
+      </section>
+      <!-- ================= FIN DE LA SECCION HERO ================= -->
+
+      <!-- ================= SECCION CURSOS ================= -->
+      <section id="cursos" class="cursos">
+        <!-- Adornos de svg -->
+        <svg
+          class="cursos-svg"
+          viewBox="0 0 968 180"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M428.435 98.1759C244.685 92.5359 87.1679 87.7012 0 0V100.713C142.26 98.1378 276.759 102.37 638.827 116.142C748.796 124.43 828.26 142.945 968 182.563V181.004C788.851 109.238 597.534 103.366 428.435 98.1759Z"
+          />
+        </svg>
+
+        <svg
+          class="cursos-2-svg"
+          viewBox="0 0 817 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 28.0442C127.253 26.3342 608.09 -33.2882 817 26.6762V40H4.57394L0 28.0442Z"
+          />
+        </svg>
+
+        <!-- Fin de los Adornos de svg -->
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <!-- Tarjetas -->
+            <div
+              class="d-flex justify-content-center mt-4 mt-md-0 col-12 col-md-3"
+            >
+              <div class="tarjeta">
+                <svg
+                  class="horas-svg mb-3"
+                  viewBox="0 0 43 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.5208 0.166672C10.0333 0.166672 0.6875 9.51251 0.6875 21C0.6875 32.4875 10.0333 41.8333 21.5208 41.8333C33.0083 41.8333 42.3542 32.4875 42.3542 21C42.3542 9.51251 33.0083 0.166672 21.5208 0.166672ZM33.5 23.0833H19.4375V8.50001H23.6042V18.9167H33.5V23.0833Z"
+                  />
+                </svg>
+                <span class="d-block text-cursos font-serif fs-5">60,000+</span>
+                <span class="d-block text-cursos font-serif fs-5 text-center"
+                  >Contenido de horas</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-center mt-4 mt-md-0 col-12 col-md-3"
+            >
+              <div class="tarjeta">
+                <svg
+                  class="horas-svg mb-3"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24.8686 7.85367C20.5626 7.85367 17.072 11.9291 17.072 16.9564C17.072 20.4429 18.751 23.471 21.2165 25L18.3574 26.325L10.7491 29.8537C10.0141 30.2212 9.64729 30.8444 9.64729 31.7265V40.1057C9.70775 41.1533 10.3363 42.1297 11.3555 42.1463H38.423C39.5865 42.0451 40.175 41.1079 40.1865 40.1057V31.7265C40.1865 30.8444 39.8197 30.2212 39.0847 29.8537L31.7519 26.325L28.7045 24.8813C31.0688 23.3179 32.6653 20.3553 32.6653 16.9564C32.6653 11.9291 29.1746 7.85367 24.8686 7.85367ZM12.2926 11.0547C10.4396 11.125 8.971 11.9269 7.85525 13.2045C6.62108 14.7427 6.01942 16.5691 6.00779 18.3859C6.08358 21.0725 7.28567 23.6158 9.42567 24.9461L0.881792 28.9165C0.29375 29.137 0 29.6515 0 30.46V37.1849C0.0459167 38.0768 0.509 38.8264 1.37729 38.8392H7.05579V31.7265C7.14975 29.8248 8.04275 28.2878 9.64729 27.5377L15.3243 24.837C15.7653 24.5797 16.188 24.23 16.5923 23.789C14.2516 20.1775 13.9266 15.8519 15.4351 12.0473C14.454 11.4468 13.3513 11.061 12.2926 11.0547ZM37.6504 11.0547C36.4386 11.08 35.3187 11.5263 34.3988 12.1565C35.8661 15.9955 35.4614 20.3238 33.2953 23.6781C33.7731 24.2294 34.2705 24.6522 34.785 24.9462L40.2419 27.5377C41.9043 28.4494 42.7615 30.0001 42.778 31.7265V38.8393H48.6211C49.5821 38.7563 49.9917 37.9898 50 37.1849V30.46C50 29.725 49.7063 29.2106 49.1182 28.9165L40.6836 24.8908C42.871 23.2779 43.9694 20.8608 43.9906 18.3859C43.9325 16.4271 43.3341 14.6082 42.1432 13.2045C40.8988 11.8545 39.3553 11.069 37.6504 11.0547Z"
+                  />
+                </svg>
+                <span class="d-block text-cursos font-serif fs-5"
+                  >1,00,000+</span
+                >
+                <span class="d-block text-cursos font-serif fs-5"
+                  >Estudiantes</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-center mt-4 mt-md-0 col-12 col-md-3"
+            >
+              <div class="tarjeta">
+                <svg
+                  class="horas-svg mb-3"
+                  viewBox="0 0 43 43"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M42.1875 21.0938C42.1875 9.44437 32.7431 0 21.0938 0C9.74602 0 0.494297 8.96203 0.0217968 20.1937C0.0161718 20.3316 0.0147656 20.4715 0.0119531 20.61C0.00843747 20.7717 0 20.932 0 21.0938V21.1648C0 32.7755 9.44437 42.1875 21.0938 42.1875C32.7431 42.1875 42.1875 32.7755 42.1875 21.1648L42.1861 21.1303L42.1875 21.0938ZM25.3055 40.3249C24.9363 40.1245 24.582 39.7962 24.4378 39.349C24.177 38.539 24.3787 37.9104 24.6783 37.1791C24.9173 36.5934 24.596 35.917 24.7549 35.3039C25.065 34.1107 25.4391 32.8177 25.3237 31.5359C25.252 30.7491 25.0777 30.7132 24.4955 30.259C23.8816 29.7773 23.8816 29.096 23.471 28.4871C23.0991 27.9337 24.1003 25.8314 23.8212 25.7034C23.5083 25.5593 22.7967 25.7477 22.5717 25.4489C22.3298 25.1269 22.1611 24.7465 21.8285 24.4969C21.6141 24.3359 20.6655 23.7973 20.4124 23.8352C19.1377 24.0258 17.7567 22.7827 16.9432 21.972C16.3828 21.4158 16.1494 20.7921 15.7388 20.1488C15.3914 19.6038 14.8655 19.5567 14.6074 18.881C14.3367 18.1751 14.4977 17.2709 14.4155 16.5284C14.3262 15.7303 13.9296 15.4758 13.4339 14.8655C12.3736 13.5555 11.9834 11.6009 9.97172 11.6009C8.89102 11.6009 8.96766 13.9549 8.09719 13.6392C7.11281 13.2827 5.58984 14.9688 5.61164 14.7417C5.72695 13.5647 6.93562 12.9923 7.05375 12.6415C7.43977 11.4898 5.32898 11.7654 5.59969 10.8049C5.73187 10.3324 7.07484 9.98859 6.79711 9.70664C6.71344 9.62086 5.68617 8.90016 5.7368 8.8643C5.92734 8.7307 6.75563 9.15398 6.57563 8.60414C6.51516 8.42133 6.41742 8.25328 6.32461 8.08383C6.75152 7.59904 7.20206 7.13558 7.67461 6.69516C8.38758 6.6368 9.12727 6.68109 9.39516 6.73313C11.0939 7.06781 11.6845 7.92773 13.3833 7.29141C14.2003 6.98625 17.2118 7.5157 17.6435 8.37211C17.8784 8.84039 18.753 8.08875 19.0941 8.03813C19.4597 7.98328 20.2859 8.54648 20.5376 8.20125C21.2006 7.29352 20.1129 6.91664 21.3975 7.61555C22.2588 8.08453 23.9421 6.02227 23.4091 8.44594C23.0245 10.1932 21.6112 10.2319 20.5748 11.3702C19.5546 12.491 22.5935 12.7962 22.6716 13.8087C22.8966 16.7238 24.4512 13.571 24.0349 12.5346C23.2298 10.5272 24.9511 11.0784 25.6444 12.3539C26.029 13.062 26.3215 12.4657 26.7926 12.2189C27.1744 12.0199 27.2763 13.0978 27.3586 13.2855C27.6293 13.9092 28.5188 14.0955 28.3683 14.8985C28.2009 15.7837 27.5716 15.518 26.9564 15.6677C26.2695 15.8344 27.0675 16.4123 26.9677 16.6233C26.8594 16.8539 26.0311 16.9495 25.8103 17.0803C25.1606 17.4628 25.5579 18.2088 25.0495 18.6096C24.7008 18.8852 24.3492 18.7059 24.2817 19.222C24.2023 19.8302 23.0815 20.0257 23.227 20.6072C23.2671 20.7668 23.5898 21.9593 23.3866 22.0226C23.2931 22.0528 22.5541 20.9855 22.3523 20.8786C21.953 20.667 20.1375 20.8399 19.9041 22.0416C19.7529 22.8185 21.003 24.0455 21.3216 22.9753C21.716 21.6584 21.9037 23.7424 21.8088 23.824C21.9973 23.9885 23.0998 23.5533 22.7728 24.3162C22.6343 24.6389 22.9085 25.4805 23.3979 25.2211C23.6025 25.1128 24.1298 25.4391 24.222 25.264C24.3543 25.0623 24.5333 24.8954 24.7437 24.7774C25.2366 24.4891 25.9741 24.7598 26.5141 24.7915C26.8439 24.8105 29.5467 26.2849 29.5615 26.5809C29.6205 27.6884 31.6638 27.5442 31.9774 27.9401C32.8205 29.013 32.561 28.4681 31.9458 29.8427C31.6357 30.5346 31.9057 31.3833 31.1548 31.8846C30.7934 32.1251 30.3525 32.0048 30.0312 32.3452C29.7415 32.6524 29.8554 33.0195 29.6796 33.3745C29.468 33.7971 26.6238 36.353 26.4361 36.971C26.3426 37.2811 25.4939 37.5511 26.2097 37.8485C26.6259 37.9709 25.2879 39.2358 25.9313 39.7596C26.088 39.8869 26.1907 39.9945 26.268 40.0908C25.9467 40.1766 25.6282 40.2546 25.3055 40.3249V40.3249ZM23.6208 1.57289C23.5934 1.67484 23.6348 1.79508 23.8113 1.9125C24.2093 2.17617 23.6974 2.76187 23.1483 2.3843C22.6005 2.00672 21.3687 2.55375 21.4538 2.83711C21.5374 3.12047 21.9178 3.23297 22.5056 3.00727C23.092 2.78086 23.3339 3.04102 23.4323 3.30961C23.4998 3.49172 23.4323 3.59297 23.4134 3.83836C23.3958 4.08375 22.713 3.91359 22.1456 3.95227C21.5768 3.99023 20.9714 3.83836 20.989 3.51703C21.008 3.19641 20.3836 2.6107 20.0109 2.36602C19.639 2.12133 20.1741 1.59258 20.6677 1.98844C21.1591 2.385 21.1788 1.9132 21.747 1.76273C22.0697 1.67695 21.9403 1.54828 21.8306 1.42594C22.4353 1.44703 23.0316 1.49766 23.6208 1.57289ZM26.0937 7.80891C26.5191 7.92422 27.258 8.46211 27.258 8.71664C27.258 8.97188 26.9227 9.29109 26.7743 9.25453C25.7034 8.99367 24.8006 7.93688 24.3035 7.3582C23.4359 6.34922 23.4907 7.21406 22.1161 6.77742C21.7645 6.66492 21.207 5.57438 21.5761 5.03648C21.9452 4.49859 22.3713 4.41352 22.7116 4.55625C23.052 4.69687 24.0462 4.10273 24.2747 4.81078C24.5011 5.51883 25.1262 6.42234 25.695 6.66422C26.2645 6.90469 25.6669 7.69359 26.0937 7.80891V7.80891ZM26.4347 11.0946C26.6048 11.4342 25.4116 10.698 25.1276 10.3584C24.8449 10.0195 24.4174 9.25383 24.7598 8.91422C25.1002 8.57531 25.8637 9.62086 26.2652 9.84937C27.0591 10.3029 26.2645 10.7557 26.4347 11.0946V11.0946ZM20.392 5.95125C20.4743 5.83805 20.6487 6.12141 20.8041 6.40477C20.9595 6.68813 20.745 7.0875 20.392 7.02703C20.0391 6.96797 20.1945 6.22828 20.392 5.95125ZM20.392 3.10219C20.392 3.10219 20.7246 3.91359 20.392 3.78141C20.0595 3.64922 20.0433 3.30961 20.392 3.10219ZM20.4595 5.66859C20.3646 5.44289 20.3428 4.51547 20.5734 4.23422C20.9138 3.81938 21.4636 4.63078 21.0938 4.95141C20.7246 5.27273 20.5537 5.8957 20.4595 5.66859V5.66859ZM16.1866 6.66352C15.5686 6.61922 15.5552 6.08484 15.4695 5.80148C15.3837 5.51813 14.8718 6.33938 14.3543 5.80148C13.8368 5.26359 14.4752 4.55625 14.3613 4.13086C14.2474 3.70617 15.582 4.13086 15.7816 4.13086C15.9813 4.13086 16.5206 5.00836 16.662 4.99359C16.8047 4.97953 17.5711 5.68758 17.5711 5.40422C17.5711 5.12156 17.6878 4.63922 18.225 4.58297C19.0491 4.49789 18.3101 5.4893 18.2812 5.87531C18.2538 6.26133 18.9077 6.93281 19.1475 7.21617C19.3894 7.49953 18.5379 7.69852 18.3952 7.52766C18.2538 7.3575 17.884 7.52766 17.5711 7.75406C17.2596 7.98047 16.4067 7.44258 16.0095 7.27242C15.6115 7.10297 16.8047 6.70711 16.1866 6.66352V6.66352ZM18.3952 2.19586C18.9443 2.385 19.2565 2.55445 19.5265 2.19586C19.7873 1.84992 19.9863 2.95031 19.7972 3.25195C19.6073 3.555 19.248 3.47977 19.1904 3.25195C19.1341 3.02695 17.846 2.00672 18.3952 2.19586V2.19586ZM19.1904 5.61234C19.002 5.36625 18.983 5.08359 19.1904 4.87617C19.3992 4.66875 19.3317 4.42336 19.703 4.34813C19.8858 4.31016 19.9104 4.59281 19.9104 4.85719C19.9104 5.12156 20.1382 5.46117 19.9104 5.87531C19.6833 6.28945 19.3802 5.85703 19.1904 5.61234ZM20.7408 1.41539C20.7323 1.46742 20.6979 1.49836 20.6114 1.48992C20.5519 1.47984 20.4953 1.45705 20.4455 1.42313C20.5446 1.41961 20.6416 1.4168 20.7408 1.41539ZM16.4454 2.21484C16.8806 2.21484 16.8244 2.50875 17.1844 2.72039C17.5444 2.93133 17.3545 1.62914 17.6006 2.11992C17.8467 2.61 18.5773 3.28992 18.2257 3.42141C17.9234 3.53602 16.6549 4.02539 16.541 3.94102C16.4271 3.85664 16.2759 3.49805 15.9722 3.42141C15.6684 3.34617 15.3471 2.62898 15.1383 2.64797C15.0588 2.655 15.0518 2.51859 15.1038 2.33719C15.469 2.21962 15.8376 2.11293 16.2091 2.01727C16.2499 2.12836 16.3118 2.21484 16.4454 2.21484V2.21484ZM25.9509 23.3262C25.4974 23.7945 24.7162 22.9999 24.177 23.028C23.6377 23.0562 23.367 22.4902 22.8987 22.5471C22.429 22.6027 23.0266 21.9516 23.6798 22.2926C24.3316 22.6322 26.3208 22.943 25.9509 23.3262V23.3262ZM35.0423 7.2007C34.9102 7.36945 34.7597 7.48758 34.6155 7.61203C34.1902 7.98047 33.3949 7.95234 33.281 8.20687C33.1671 8.46141 32.883 9.25383 31.8888 9.25734C30.8946 9.26016 31.1787 10.7557 31.0936 11.1825C31.0085 11.6093 30.7821 12.1141 30.4973 11.7457C30.2133 11.378 30.0994 11.5186 29.2205 10.4428C28.3416 9.36703 28.6791 8.77289 28.9638 8.46141C29.2479 8.15063 29.3618 7.41375 28.9638 7.52695C28.5659 7.64016 28.3387 7.38492 28.4238 7.03266C28.5089 6.68039 28.935 6.42305 28.4238 6.04688C27.9127 5.67141 28.196 4.32773 27.7987 3.10148C27.4008 1.87453 26.8608 2.74289 25.9805 2.79C25.1002 2.83711 24.9574 2.17617 25.3554 1.87383C29.0276 2.68589 32.3896 4.53469 35.0423 7.2007"
+                  />
+                </svg>
+                <span class="d-block text-cursos font-serif fs-5">110+</span>
+                <span class="d-block text-cursos font-serif fs-5"
+                  >Los paises</span
+                >
+              </div>
+            </div>
+
+            <!--fin Tarjetas -->
+
+            <!-- Cursos Populares -->
+            <div class="text-center my-4 crs__populares col-12" data-aos="fade-up">
+              <h2>Nuestros cursos populares</h2>
+              <div class="my-4 d-flex justify-content-center">
+                <p class="col-12 col-md-6 col-lg-5 text-gray-white">
+                  Lorem ipsum dolor sit amet, in sed integer. Scelerisque nam
+                  evget imperdiet accumsan, ipsum turpis cursus. In elit amet,
+                  tortor nunc.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tarjetas de cursos -->
+            <div class="row justify-content-center my-5">
+              <div class="cursos__container swiper">
+                <div class="col-12 swiper-wrapper">
+                  <!-- Curso 1 -->
+                  <div
+                    class="col-12 col-lg-4 col-xl-4 d-flex justify-content-center swiper-slide"
+                  >
+                    <div class="curso__card">
+                      <div class="position-relative">
+                        <img
+                          class="img-fluid"
+                          style="border-radius: 15px"
+                          src="../dist/assets/img/cursos-1.jpg"
+                          alt="..."
+                        />
+                        <div class="creative">Creativo</div>
+                      </div>
+                      <div class="p-3">
+                        <h3 class="text-center">Escritura creativa</h3>
+                        <p class="text-gray-white text-center">
+                          Escritura creativa: La escritura creativa es cualquier
+                          escrito que salga los límites de la normalidad
+                          profesional
+                        </p>
+
+                        <!-- Leccion y ranking -->
+                        <div class="d-flex justify-content-between">
+                          <!-- Lecciones -->
+                          <div class="d-flex align-items-center">
+                            <div class="player__cursos me-3">
+                              <svg
+                                class="triangulo-hero-cursos"
+                                viewBox="0 0 103 151"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0 11.2816V139.718C0 149.752 14.4043 154.771 22.8272 147.68L99.0841 83.4615C104.305 79.0634 104.305 71.9366 99.0841 67.5385L22.8272 3.32011C14.4043 -3.77121 0 1.24835 0 11.2816Z"
+                                />
+                              </svg>
+                            </div>
+                            <span class="font-serif">12x Lecciones</span>
+                          </div>
+                          <!-- Ranking -->
+                          <div class="ranking d-flex align-items-center">
+                            4.9
+                            <img
+                              style="width: 15px"
+                              class="ms-1"
+                              src="../dist/assets/img/estrella-ranking.svg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Curso 2 -->
+                  <div
+                    class="col-12 col-lg-4 col-xl-4 d-flex justify-content-center swiper-slide"
+                  >
+                    <div class="curso__card">
+                      <div class="position-relative">
+                        <img
+                          class="img-fluid"
+                          style="border-radius: 15px"
+                          src="../dist/assets/img/cursos-2.jpg"
+                          alt="..."
+                        />
+                        <div class="creative">Creativo</div>
+                      </div>
+                      <div class="p-3">
+                        <h3 class="text-center">Desarrollo Web</h3>
+                        <p class="text-gray-white text-center">
+                          Escritura creativa: La escritura creativa es cualquier
+                          escrito que salga los límites de la normalidad
+                          profesional
+                        </p>
+
+                        <!-- Leccion y ranking -->
+                        <div class="d-flex justify-content-between">
+                          <!-- Lecciones -->
+                          <div class="d-flex align-items-center">
+                            <div class="player__cursos me-3">
+                              <svg
+                                class="triangulo-hero-cursos"
+                                viewBox="0 0 103 151"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0 11.2816V139.718C0 149.752 14.4043 154.771 22.8272 147.68L99.0841 83.4615C104.305 79.0634 104.305 71.9366 99.0841 67.5385L22.8272 3.32011C14.4043 -3.77121 0 1.24835 0 11.2816Z"
+                                />
+                              </svg>
+                            </div>
+                            <span class="font-serif">12x Lecciones</span>
+                          </div>
+                          <!-- Ranking -->
+                          <div class="ranking d-flex align-items-center">
+                            4.9
+                            <img
+                              style="width: 15px"
+                              class="ms-1"
+                              src="../dist/assets/img/estrella-ranking.svg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Curso 3 -->
+                  <div
+                    class="col-12 col-lg-4 col-xl-4 d-flex justify-content-center swiper-slide"
+                  >
+                    <div class="curso__card">
+                      <div class="position-relative">
+                        <img
+                          class="img-fluid"
+                          style="border-radius: 15px"
+                          src="../dist/assets/img/cursos-3.jpg"
+                          alt="..."
+                        />
+                        <div class="creative">Creativo</div>
+                      </div>
+                      <div class="p-3">
+                        <h3 class="text-center">Diseño gráfico</h3>
+                        <p class="text-gray-white text-center">
+                          Escritura creativa: La escritura creativa es cualquier
+                          escrito que salga los límites de la normalidad
+                          profesional
+                        </p>
+
+                        <!-- Leccion y ranking -->
+                        <div class="d-flex justify-content-between">
+                          <!-- Lecciones -->
+                          <div class="d-flex align-items-center">
+                            <div class="player__cursos me-3">
+                              <svg
+                                class="triangulo-hero-cursos"
+                                viewBox="0 0 103 151"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0 11.2816V139.718C0 149.752 14.4043 154.771 22.8272 147.68L99.0841 83.4615C104.305 79.0634 104.305 71.9366 99.0841 67.5385L22.8272 3.32011C14.4043 -3.77121 0 1.24835 0 11.2816Z"
+                                />
+                              </svg>
+                            </div>
+                            <span class="font-serif">12x Lecciones</span>
+                          </div>
+                          <!-- Ranking -->
+                          <div class="ranking d-flex align-items-center">
+                            4.9
+                            <img
+                              style="width: 15px"
+                              class="ms-1"
+                              src="../dist/assets/img/estrella-ranking.svg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Curso 4 -->
+                  <div
+                    class="col-12 col-lg-4 col-xl-4 d-flex justify-content-center swiper-slide"
+                  >
+                    <div class="curso__card">
+                      <div class="position-relative">
+                        <img
+                          class="img-fluid"
+                          style="border-radius: 15px"
+                          src="../dist/assets/img/cursos-3.jpg"
+                          alt="..."
+                        />
+                        <div class="creative">Creativo</div>
+                      </div>
+                      <div class="p-3">
+                        <h3 class="text-center">Diseño gráfico</h3>
+                        <p class="text-gray-white text-center">
+                          Escritura creativa: La escritura creativa es cualquier
+                          escrito que salga los límites de la normalidad
+                          profesional
+                        </p>
+
+                        <!-- Leccion y ranking -->
+                        <div class="d-flex justify-content-between">
+                          <!-- Lecciones -->
+                          <div class="d-flex align-items-center">
+                            <div class="player__cursos me-3">
+                              <svg
+                                class="triangulo-hero-cursos"
+                                viewBox="0 0 103 151"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0 11.2816V139.718C0 149.752 14.4043 154.771 22.8272 147.68L99.0841 83.4615C104.305 79.0634 104.305 71.9366 99.0841 67.5385L22.8272 3.32011C14.4043 -3.77121 0 1.24835 0 11.2816Z"
+                                />
+                              </svg>
+                            </div>
+                            <span class="font-serif">12x Lecciones</span>
+                          </div>
+                          <!-- Ranking -->
+                          <div class="ranking d-flex align-items-center">
+                            4.9
+                            <img
+                              style="width: 15px"
+                              class="ms-1"
+                              src="../dist/assets/img/estrella-ranking.svg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Curso 5 -->
+                  <div
+                    class="col-12 col-lg-4 col-xl-4 d-flex justify-content-center swiper-slide"
+                  >
+                    <div class="curso__card">
+                      <div class="position-relative">
+                        <img
+                          class="img-fluid"
+                          style="border-radius: 15px"
+                          src="../dist/assets/img/cursos-3.jpg"
+                          alt="..."
+                        />
+                        <div class="creative">Creativo</div>
+                      </div>
+                      <div class="p-3">
+                        <h3 class="text-center">Diseño gráfico</h3>
+                        <p class="text-gray-white text-center">
+                          Escritura creativa: La escritura creativa es cualquier
+                          escrito que salga los límites de la normalidad
+                          profesional
+                        </p>
+
+                        <!-- Leccion y ranking -->
+                        <div class="d-flex justify-content-between">
+                          <!-- Lecciones -->
+                          <div class="d-flex align-items-center">
+                            <div class="player__cursos me-3">
+                              <svg
+                                class="triangulo-hero-cursos"
+                                viewBox="0 0 103 151"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0 11.2816V139.718C0 149.752 14.4043 154.771 22.8272 147.68L99.0841 83.4615C104.305 79.0634 104.305 71.9366 99.0841 67.5385L22.8272 3.32011C14.4043 -3.77121 0 1.24835 0 11.2816Z"
+                                />
+                              </svg>
+                            </div>
+                            <span class="font-serif">12x Lecciones</span>
+                          </div>
+                          <!-- Ranking -->
+                          <div class="ranking d-flex align-items-center">
+                            4.9
+                            <img
+                              style="width: 15px"
+                              class="ms-1"
+                              src="../dist/assets/img/estrella-ranking.svg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Botones de next y prev pesonalisados -->
+                <div class="swiper-button-next">
+                  <div class="boton">
+                    <svg
+                      class="triangulo__cursos-next"
+                      viewBox="0 0 103 151"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 11.2816V139.718C0 149.752 14.4043 154.771 22.8272 147.68L99.0841 83.4615C104.305 79.0634 104.305 71.9366 99.0841 67.5385L22.8272 3.32011C14.4043 -3.77121 0 1.24835 0 11.2816Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-button-prev">
+                  <div class="boton">
+                    <svg
+                      class="triangulo__cursos-prev"
+                      viewBox="0 0 103 151"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 11.2816V139.718C0 149.752 14.4043 154.771 22.8272 147.68L99.0841 83.4615C104.305 79.0634 104.305 71.9366 99.0841 67.5385L22.8272 3.32011C14.4043 -3.77121 0 1.24835 0 11.2816Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <!-- Fin de botones de next y prev pesonalisados -->
+              </div>
+            </div>
+
+            <!-- Fin Tarjetas de cursos -->
+          </div>
+        </div>
+      </section>
+      <!-- ================= FIN DE LA SECCION CURSOS ================= -->
+
+      <!-- ================= SECCION CURSOS ONLINE ================= -->
+      <section id="beneficios" class="online">
+        <div class="container">
+          <div class="row">
+            <div class="online__contenido col-12 col-lg-6">
+              <img
+                class="logo__online"
+                src="./assets/img/logo.svg"
+                alt="Logo"
+              />
+              <!-- <div class="online__grupo">
+         <img src="./assets/img/online-grupo.png" class="img-fluid" alt="...">
+       </div> -->
+              <div class="imagenes__online">
+                <div class="imagen__1">
+                  <img
+                    src="./assets/img/online-1.png"
+                    class="img-fluid"
+                    alt="..."
+                    data-aos="zoom-in"
+                  />
+                </div>
+                <div class="imagen__2">
+                  <img
+                    src="./assets/img/online-2.png"
+                    class="img-fluid"
+                    alt="..."
+                    data-aos="zoom-in"
+                  />
+                </div>
+                <div class="imagen__3">
+                  <img
+                    src="./assets/img/online-3.png"
+                    class="img-fluid"
+                    alt="..."
+                    data-aos="zoom-in"
+                  />
+                </div>
+                <div class="imagen__4">
+                  <img
+                    src="./assets/img/online-4.png"
+                    class="img-fluid"
+                    alt="..."
+                    data-aos="zoom-in"
+                  />
+                </div>
+                <div class="imagen__5">
+                  <img
+                    src="./assets/img/online-5.png"
+                    class="img-fluid"
+                    alt="..."
+                    data-aos="zoom-in"
+                  />
+                </div>
+                <div class="imagen__6">
+                  <img
+                    src="./assets/img/online-6.png"
+                    class="img-fluid"
+                    alt="..."
+                    data-aos="zoom-in"
+                  />
+                </div>
+                <div class="imagen__7">
+                  <img
+                    src="./assets/img/online-7.png"
+                    class="img-fluid"
+                    alt="..."
+                    data-aos="zoom-in"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 overflow-hidden">
+              <div class="my-4" data-aos="fade-left">
+                <h1>Beneficios de nuestra línea aprendizaje</h1>
+              </div>
+              <!-- Online Certificados -->
+              <div class="d-flex flex-column flex-lg-row align-items-lg-center" data-aos="fade-up">
+                <div class="oline__icons">
+                  <svg
+                    class="horas-svg"
+                    width="42"
+                    height="40"
+                    viewBox="0 0 42 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.33335 0.25C2.02085 0.25 0.166687 2.10417 0.166687 4.41667V25.25C0.166687 26.3551 0.605674 27.4149 1.38708 28.1963C2.16848 28.9777 3.22829 29.4167 4.33335 29.4167H21V39.8333L27.25 33.5833L33.5 39.8333V29.4167H37.6667C38.7718 29.4167 39.8316 28.9777 40.613 28.1963C41.3944 27.4149 41.8334 26.3551 41.8334 25.25V4.41667C41.8334 3.3116 41.3944 2.25179 40.613 1.47039C39.8316 0.688987 38.7718 0.25 37.6667 0.25H4.33335ZM21 4.41667L27.25 8.58333L33.5 4.41667V11.7083L39.75 14.8333L33.5 17.9583V25.25L27.25 21.0833L21 25.25V17.9583L14.75 14.8333L21 11.7083V4.41667ZM4.33335 4.41667H14.75V8.58333H4.33335V4.41667ZM4.33335 12.75H10.5834V16.9167H4.33335V12.75ZM4.33335 21.0833H14.75V25.25H4.33335V21.0833Z"
+                    />
+                  </svg>
+                </div>
+                <div class="online__descripcion my-4">
+                  <h4>Grados en línea</h4>
+                  <p class="text-white my-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                    aliquam, purus sit amet luctus venenatis, lectus magna
+                    fringilla urna, porttitor rhoncus dolor purus non enim
+                  </p>
+                </div>
+              </div>
+
+              <!-- Online Libros -->
+              <div class="d-flex flex-column flex-lg-row align-items-lg-center" data-aos="fade-up">
+                <div class="oline__icons">
+                  <svg
+                    class="horas-svg"
+                    width="39"
+                    height="41"
+                    viewBox="0 0 39 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M28.75 17.625C29.3875 17.625 30.0063 17.6812 30.625 17.775V4.5C30.625 2.4375 28.9375 0.75 26.875 0.75H4.375C2.3125 0.75 0.625 2.4375 0.625 4.5V34.5C0.625 36.5625 2.3125 38.25 4.375 38.25H17.9875C16.6141 36.2833 15.8063 33.9776 15.6521 31.5838C15.4979 29.19 16.0031 26.7997 17.1129 24.6731C18.2226 22.5464 19.8943 20.7648 21.9461 19.5221C23.9979 18.2795 26.3512 17.6233 28.75 17.625V17.625ZM8.125 17.625V4.5H17.5V17.625L12.8125 14.8125L8.125 17.625Z"
+                      fill="#794BFF"
+                    />
+                    <path
+                      d="M28.75 21.375C23.575 21.375 19.375 25.575 19.375 30.75C19.375 35.925 23.575 40.125 28.75 40.125C33.925 40.125 38.125 35.925 38.125 30.75C38.125 25.575 33.925 21.375 28.75 21.375ZM26.4062 35.4375V26.0625L33.9062 30.75L26.4062 35.4375Z"
+                    />
+                  </svg>
+                </div>
+                <div class="online__descripcion my-4">
+                  <h4>Cursos cortos</h4>
+                  <p class="text-white my-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                    aliquam, purus sit amet luctus venenatis
+                  </p>
+                </div>
+              </div>
+
+              <!-- Online Expertos -->
+              <div class="d-flex flex-column flex-lg-row align-items-lg-center" data-aos="fade-up">
+                <div class="oline__icons">
+                  <svg
+                    class="horas-svg"
+                    width="46"
+                    height="46"
+                    viewBox="0 0 46 46"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M31.3333 16.7501C31.3333 18.9602 30.4553 21.0798 28.8925 22.6426C27.3297 24.2054 25.2101 25.0834 23 25.0834C20.7898 25.0834 18.6702 24.2054 17.1074 22.6426C15.5446 21.0798 14.6666 18.9602 14.6666 16.7501C14.6666 14.5399 15.5446 12.4203 17.1074 10.8575C18.6702 9.29472 20.7898 8.41675 23 8.41675C25.2101 8.41675 27.3297 9.29472 28.8925 10.8575C30.4553 12.4203 31.3333 14.5399 31.3333 16.7501V16.7501ZM27.1666 16.7501C27.1666 17.8552 26.7276 18.915 25.9462 19.6964C25.1648 20.4778 24.105 20.9167 23 20.9167C21.8949 20.9167 20.8351 20.4778 20.0537 19.6964C19.2723 18.915 18.8333 17.8552 18.8333 16.7501C18.8333 15.645 19.2723 14.5852 20.0537 13.8038C20.8351 13.0224 21.8949 12.5834 23 12.5834C24.105 12.5834 25.1648 13.0224 25.9462 13.8038C26.7276 14.5852 27.1666 15.645 27.1666 16.7501V16.7501Z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M23 0.083374C10.3437 0.083374 0.083313 10.3438 0.083313 23C0.083313 35.6563 10.3437 45.9167 23 45.9167C35.6562 45.9167 45.9166 35.6563 45.9166 23C45.9166 10.3438 35.6562 0.083374 23 0.083374ZM4.24998 23C4.24998 27.3542 5.7354 31.3625 8.22498 34.5459C9.97338 32.2498 12.2289 30.3891 14.8155 29.109C17.402 27.829 20.2494 27.1642 23.1354 27.1667C25.984 27.164 28.7956 27.8115 31.3561 29.06C33.9165 30.3085 36.1582 32.1249 37.9104 34.3709C39.7155 32.0034 40.9309 29.2401 41.456 26.3096C41.9811 23.3791 41.8009 20.3657 40.9302 17.5188C40.0595 14.6718 38.5234 12.0731 36.4489 9.93762C34.3745 7.80218 31.8213 6.19141 29.0008 5.2386C26.1802 4.28579 23.1733 4.01831 20.2289 4.45832C17.2844 4.89832 14.487 6.03315 12.0682 7.7689C9.64945 9.50466 7.67875 11.7914 6.31921 14.44C4.95966 17.0886 4.25036 20.0229 4.24998 23V23ZM23 41.75C18.6957 41.7565 14.5214 40.2758 11.1833 37.5584C12.5269 35.6349 14.3153 34.0645 16.3962 32.9806C18.4772 31.8968 20.7891 31.3317 23.1354 31.3334C25.4524 31.3315 27.7364 31.8825 29.7977 32.9405C31.8591 33.9985 33.6382 35.5331 34.9875 37.4167C31.6235 40.2223 27.3804 41.7562 23 41.75V41.75Z"
+                    />
+                  </svg>
+                </div>
+                <div class="online__descripcion my-4">
+                  <h4>Formación de expertos</h4>
+                  <p class="text-white my-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                    aliquam, purus sit amet luctus venenatis, lectus magna
+                    fringilla urna, porttitor
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          class="hero-decoracion"
+          src="./assets/img/hero-decoracion.png"
+          alt="..."
+        />
+        <img
+          class="online-decoracion"
+          src="./assets/img/online-decoracion.png"
+          alt="..."
+        />
+      </section>
+      <!-- ================= FIN DE LA SECCION CURSOS ONLINE ================= -->
+
+      <!-- ================= SECCION INSTRUCTOR ================= -->
+      <section id="instructor" class="instructor">
+        <div class="container">
+          <div class="row align-items-center min-vh-100">
+            <div class="my-4 my-lg-0 col-12 col-md-6" data-aos="fade-right">
+              <h2 class="my-4">Conviértete en instructor</h2>
+              <p class="text-gray-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+                urna, porttitor rhoncus dolor purus non enim praesent elementum
+                facilisis leo,
+              </p>
+              <p class="text-gray-white">
+                vel fringilla est ullamcorper eget nulla facilisi etiam
+                dignissim diam quis enim lobortis scelerisque fermentum dui
+                faucibus in ornare quam viverra orci
+              </p>
+
+              <button class="button my-2">Haga clic aquí para aplicar</button>
+            </div>
+            <div class="my-4 my-lg-0 col-12 col-md-6 content__instructor" data-aos="fade-down-left">
+              <div class="bola__instructor" >
+                <div class="content__img-instructor">
+                  <img
+                    class="img-instructor"
+                    src="./assets/img/instructor.png"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <img
+                class="img-instructor-2"
+                src="./assets/img/instructor.png"
+                alt="..."
+              />
+              <div class="adorno_1" data-aos="fade-up-right"></div>
+              <div class="adorno_2" data-aos="fade-down"></div>
+              <div class="adorno_3" data-aos="fade-left"></div>
+              <div class="adorno_4"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= FIN DE LA INSTRUCTOR ================= -->
+      <!-- ================= SECCION TESTIMONIAL ================= -->
+      <section id="testimonios" class="testimonials">
+
+        <div class="container position-relative">
+          <div class="row">
+            <div class="text-center my-2 col-12" data-aos="fade-up">
+              <h2>Testimonio del estudiante</h2>
+              <div class="my-4 d-flex justify-content-center">
+                <p class="col-12 col-md-6 col-lg-5 text-gray-white">
+                  vel fringilla est ullamcorper eget nulla facilisi etiam
+                  dignissim diam quis enim lobortis scelerisque fermentum dui
+                  faucibus in ornare quam viverra orci
+                </p>
+              </div>
+            </div>
+
+            <!-- Swiper Testimonials -->
+            <div class="container__testimonial swiper">
+              <div class="swiper-wrapper">
+
+                <div class="col-12 d-flex justify-content-center swiper-slide">
+                    <div class="content__testimonial">
+                      <p class="text-gray-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                        aliquam, purus sit amet luctus venenatis, lectus magna
+                        fringilla urna, porttitor
+                      </p>
+    
+                      <div class="d-flex justify-content-end">
+                        <span class="fs-6 font-medium">-Jeo Stanlee</span>
+                      </div>
+                      <div class="img__testimonial-1"></div>
+                    </div>
+                </div>
+    
+                <div class="col-12 d-flex justify-content-center swiper-slide">
+                  <div class="content__testimonial">
+                    <p class="text-gray-white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                      aliquam, purus sit amet luctus venenatis, lectus magna
+                      fringilla urna, porttitor
+                    </p>
+    
+                    <div class="d-flex justify-content-end">
+                      <span class="fs-6 font-medium">-Bruno Arias</span>
+                    </div>
+                    <div class="img__testimonial-2"></div>
+                  </div>
+              </div>
+    
+              <div class="col-12 d-flex justify-content-center swiper-slide">
+                <div class="content__testimonial">
+                  <p class="text-gray-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                    aliquam, purus sit amet luctus venenatis, lectus magna
+                    fringilla urna, porttitor
+                  </p>
+    
+                  <div class="d-flex justify-content-end">
+                    <span class="fs-6 font-medium">-Joao Basanta</span>
+                  </div>
+                  <div class="img__testimonial-3"></div>
+                </div>
+            </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+
+          <!-- imagenes testominial -->
+          <div class="testi__imagenes-1" data-aos="zoom-in">
+            <img
+              class="img-fluid"
+              src="./assets/img/testi-absolute-img-1.png"
+              alt=""
+            />
+          </div>
+          <div class="testi__imagenes-2" data-aos="zoom-in-left">
+            <img
+              class="img-fluid"
+              src="./assets/img/testi-absolute-img-2.png"
+              alt=""
+            />
+          </div>
+          <div class="testi__imagenes-3" data-aos="zoom-out-up">
+            <img
+              class="img-fluid"
+              src="./assets/img/testi-absolute-img-3.png"
+              alt=""
+            />
+          </div>
+          <div class="testi__imagenes-4" data-aos="zoom-in-left">
+            <img
+              class="img-fluid"
+              src="./assets/img/testi-absolute-img-4.png"
+              alt=""
+            />
+          </div>
+          <div class="testi__imagenes-6" data-aos="zoom-in-left">
+            <img
+              class="img-fluid"
+              src="./assets/img/testi-absolute-img-6.png"
+              alt=""
+            />
+          </div>
+        </div>
+      
+      <svg class="footer-svg" viewBox="0 0 1444 299" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1444 299C1194.3 49.7199 557.64 252.736 1.16556e-05 31.0782V8.75309e-06H1444V299Z" />
+   </svg>
+
+      
+    </section>
+      <!-- ================= FIN DE TESTIMONIAL ================= -->
+    </main>
+
+       <!-- ================= SECCION FOOTER ================= -->
+       <footer  class="footer">
+  <div class="container">
+    <div class="row  footer__fila justify-content-lg-center">
+      <div class="mb-4 col-12 col-sm-4 col-md-3 col-lg-3">
+        <img src="../dist/assets/img/logo.svg" alt="Logo" style="width: 100px;">
+        <p class="text-white mb-3 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</p>
+        <div class="d-flex gap-4">
+          <a href="https://www.behance.net/" target="_blank" class="social__content ">
+            <i class="fa-brands fa-behance"></i>
+
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" class="social__content ">
+            <i class="fa-brands fa-linkedin-in"></i>
+            
+          </a >
+          <a href="https://es-la.facebook.com/" target="_blank" class="social__content ">
+            
+            <i class="fa-brands fa-facebook-f"></i>
+          </a >
+        </div>
+      </div>
+      <div class="mb-4 col-12 col-sm-4 col-md-3 col-lg-2">
+        <div class="d-flex flex-column gap-3">
+
+          <h5 class="mb-2">
+            Empresa</h5>
+            <a href="#" class="text-decoration-none d-block text-white">Sobre nosotros
+              </a>
+              <a href="#" class="text-decoration-none d-block text-white">
+                Servicios
+              </a>
+              <a href="#" class="text-decoration-none d-block text-white">Comunidad
+              </a>
+              <a href="#" class="text-decoration-none d-block text-white">Testimonial
+              </a>
+        </div> 
+      </div>
+
+      <div class="mb-4 col-12 col-sm-4 col-md-3 col-lg-2">
+        <div class="d-flex flex-column gap-3">
+
+          <h5 class="mb-2">
+            Apoyo</h5>
+            <a href="#" class="text-decoration-none d-block text-white">Centro de ayuda
+              </a>
+              <a href="#" class="text-decoration-none d-block text-white">
+                Twittea @ Nosotros
+              </a>
+              <a href="#" class="text-decoration-none d-block text-white">webinars
+              </a>
+              <a href="#" class="text-decoration-none d-block text-white">Comentarios
+              </a>
+        </div> 
+      </div>
+
+      <div class="mb-4 mb-sm-0 col-12 col-sm-4 col-md-3 col-lg-2">
+        <div class="d-flex flex-column gap-3">
+
+          <h5 class="mb-2">
+            Enlaces</h5>
+            <a href="#" class="text-decoration-none d-block text-white">Cursos
+              </a>
+              <a href="#" class="text-decoration-none d-block text-white">
+                Conviértete en maestro
+              </a>
+              <a href="#" class="text-decoration-none d-block text-white">Servicio
+              </a>
+              <a href="#" class="text-decoration-none d-block text-white">Todo en uno
+              </a>
+        </div> 
+      </div>
+      <div class="mb-4 mb-sm-0 col-12 col-sm-4 col-md-3 col-lg-2">
+        <div class="d-flex flex-column gap-3">
+
+          <h5 class="mb-2">
+            Contactanos</h5>
+            <a href="#" class="text-decoration-none d-block text-white">(91) 98765  4321 54
+              </a>
+              <a href="#" class="text-decoration-none d-block text-white">
+                support@mail.com
+              </a>
+          
+        </div> 
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      
+      <hr class="w-50 text-white" >
+    </div>
+    <div class="col-12 pb-4  pt-2">
+      <p class="text-center text-white mb-0">Copyright &copy; 2020 Todos los derechos reservados. Nulo</p>
+    </div>
+  </div>
+
+  <div class="registro">
+    <h2 class="empieza__ahora text-center">¡Empieza ahora!</h2>
+    <p class="my-3 text-center">vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci</p>
+    <form action="#">
+      <div class="my-2 d-flex justify-content-center">
+        <input type="text" placeholder="Nombre completo" class="input">
+
+      </div>
+      <div class="my-2 d-flex justify-content-center">
+        <input type="email" placeholder="Email" class="input">
+      </div>
+      <div class="my-2 d-flex justify-content-center">
+
+        <button class="button__input">Enviar</button>
+      </div>
+    </form>
+  </div>
+  <img class="position-absolute" style="top: 10px; left:0;" src="./assets/img/footer-adorno-1.png" alt="...">
+  <img class="position-absolute bottom-0" style="right: 0;" src="./assets/img/footer-adorno-2.png" alt="...">
+       </footer>
+<!-- ================= FIN DEL FOOTER ================= -->
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--===== SWIPER JS ======-->
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+    <!--===== AOS ANIMACIONES ======-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--===== MAIN jS ======-->
+    <script src="../dist/js/main.js"></script>
+  </body>
+</html>

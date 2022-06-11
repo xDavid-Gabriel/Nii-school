@@ -1,0 +1,49 @@
+
+//LA NAVEGACION
+$navbar-light-color: hsla(228, 28%, 20%, 1);
+$navbar-light-toggler-border-color: none;
+$navbar-toggler-focus-width: 0;
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900 !important;
+  margin-bottom: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.font-serif {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900 !important;
+  margin-bottom: 0;
+}
+.font-medium {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700 !important;
+  margin-bottom: 0;
+}
+.font-body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/*navegacion fija*/
+@media (min-width: 992px) {
+  .fixed-lg-top {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1030;
+  }
+}
